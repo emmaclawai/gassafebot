@@ -62,7 +62,7 @@ export default function AuditForm() {
     setServerError(false)
 
     try {
-      const res = await fetch('/api/lead', {
+      const res = await fetch('https://formspree.io/f/maqplbpp', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
