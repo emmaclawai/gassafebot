@@ -666,7 +666,7 @@ export default function HomePage() {
               </ScrollReveal>
 
               <ScrollReveal>
-                <div className="reveal reveal-delay-1">
+                <div className="reveal reveal-delay-1" id="audit">
                   <div className="form-card">
                     <AuditForm />
                   </div>

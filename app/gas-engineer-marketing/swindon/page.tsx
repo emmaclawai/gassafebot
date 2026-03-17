@@ -54,6 +54,20 @@ const stats = [
 export default function SwindonPage() {
   return (
     <>
+      <style dangerouslySetInnerHTML={{ __html: `
+        .responsive-grid-2 {
+          display: grid;
+          grid-template-columns: minmax(0, 1fr) 360px;
+          gap: 4rem;
+          align-items: start;
+        }
+        @media (max-width: 768px) {
+          .responsive-grid-2 {
+            grid-template-columns: 1fr;
+            gap: 2rem;
+          }
+        }
+      ` }} />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
@@ -138,7 +152,7 @@ export default function SwindonPage() {
 
         {/* The opportunity */}
         <section style={{ padding: '5rem 0' }}>
-          <div className="container" style={{ display: 'grid', gridTemplateColumns: 'minmax(0,1fr) 360px', gap: '4rem', alignItems: 'start' }}>
+          <div className="container responsive-grid-2">
             <div>
               <h2 style={{ fontSize: '1.9rem', marginBottom: '1.5rem', textAlign: 'left' }}>Why Swindon Is a Goldmine for Gas Engineers Right Now</h2>
               <p style={{ lineHeight: 1.8, marginBottom: '1.2rem', opacity: 0.75 }}>
