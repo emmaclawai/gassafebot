@@ -567,8 +567,7 @@ export default function HomePage() {
             <h2>We Cover <span>The Whole UK</span></h2>
             <p className="lead">
               We work with gas engineers from London to Glasgow. Our SEO strategies are city-specific —
-              we know the competition and search patterns in each market. London is our primary focus city
-              for demand volume, but we&apos;re active across all major UK cities.
+              we know the competition and search patterns in each market. Swindon is our current proof-of-concept city — we're ranking it ourselves first, but we&apos;re active across all major UK cities.
             </p>
             <ScrollReveal>
               <div className="cities-grid reveal">
