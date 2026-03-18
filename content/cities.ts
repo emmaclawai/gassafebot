@@ -2,13 +2,14 @@ export interface City {
   slug: string
   name: string
   county: string
-  region: string  // Added for homepage compatibility
+  region: string
   postcodes: string[]
   population: string
   competitionLevel: 'Low' | 'Medium' | 'High'
   monthlySearches: number
-  description?: string  // Optional - used by dynamic route
-  searchTerms?: string[]  // Optional - used by dynamic route
+  description?: string
+  searchTerms?: string[]
+  areas?: string[]  // Optional - used by dynamic route
 }
 
 // Static city pages take priority - these cities have dedicated folders in app/gas-engineer-marketing/

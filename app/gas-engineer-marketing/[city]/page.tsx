@@ -97,7 +97,7 @@ export default function CityPage({ params }: Props) {
                   Most gas engineers in {city.name} rely on word of mouth, Checkatrade, or Google Ads — all of which are either unreliable or expensive. A well-built website with proper local SEO generates enquiries consistently, without ongoing ad spend, and from customers who are actively searching for your services right now.
                 </p>
                 <p style={{ color: 'var(--dim)', lineHeight: '1.75' }}>
-                  We build and maintain your {city.name} online presence so that when someone searches for a gas engineer in {city.areas.slice(0, 3).join(', ')} or anywhere across{' '}
+                  We build and maintain your {city.name} online presence so that when someone searches for a gas engineer in {(city.areas || []).slice(0, 3).join(', ')} or anywhere across{' '}
                   {city.region}, you&apos;re the one they find.
                 </p>
               </div>
@@ -107,7 +107,7 @@ export default function CityPage({ params }: Props) {
                     Areas we target in {city.name}
                   </div>
                   <div className="city-areas">
-                    {city.areas.map((area) => (
+                    {(city.areas || []).map((area) => (
                       <span key={area} className="city-area-tag">{area}</span>
                     ))}
                   </div>
@@ -139,7 +139,7 @@ export default function CityPage({ params }: Props) {
                 <h3>Website Built For {city.name}</h3>
                 <p>Every page is written and structured specifically for gas engineer searches in {city.name} and its surrounding areas. No templates reused from other cities.</p>
                 <ul className="service-includes">
-                  <li>Pages targeting {city.areas.slice(0, 4).join(', ')}</li>
+                  <li>Pages targeting {(city.areas || []).slice(0, 4).join(', ')}</li>
                   <li>Local search intent matched per page</li>
                   <li>Schema with {city.name} location data</li>
                   <li>Fast loading, mobile-first build</li>
