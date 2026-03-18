@@ -9,7 +9,8 @@ export interface City {
   monthlySearches: number
   description?: string
   searchTerms?: string[]
-  areas?: string[]  // Optional - used by dynamic route
+  areas?: string[]
+  demand?: string  // Optional - used by dynamic route
 }
 
 // Static city pages take priority - these cities have dedicated folders in app/gas-engineer-marketing/

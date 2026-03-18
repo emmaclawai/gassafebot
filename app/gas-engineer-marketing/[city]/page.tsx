@@ -116,7 +116,7 @@ export default function CityPage({ params }: Props) {
                       Demand level
                     </div>
                     <div style={{ fontFamily: 'Barlow Condensed, sans-serif', fontSize: '1.8rem', fontWeight: 900, color: 'var(--white)' }}>
-                      {city.demand}
+                      {city.demand || 'High'}
                     </div>
                     <div style={{ fontSize: '0.8rem', color: 'var(--dim)', marginTop: '0.3rem' }}>
                       for gas engineer services in {city.region}
