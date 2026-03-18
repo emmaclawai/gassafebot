@@ -64,7 +64,7 @@ export default function CityPage({ params }: Props) {
               <span>{city.name}</span>
             </h1>
             <p style={{ fontSize: '1.1rem', color: 'var(--slate)', maxWidth: '600px', lineHeight: '1.7', marginBottom: '2rem' }}>
-              {city.description}
+              {city.description || ''}
             </p>
             <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap', marginBottom: '2rem' }}>
               <a href="#city-contact" className="btn btn-fire btn-lg">Get My Free {city.name} SEO Audit →</a>
@@ -75,7 +75,7 @@ export default function CityPage({ params }: Props) {
                 Target search terms we rank for:
               </p>
               <div className="city-terms">
-                {city.searchTerms.map((term) => (
+                {(city.searchTerms || []).map((term) => (
                   <span key={term} className="city-term">{term}</span>
                 ))}
               </div>
