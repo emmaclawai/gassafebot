@@ -1,20 +1,88 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-<url><loc>https://www.gassafebot.co.uk/</loc></url>
-<url><loc>https://www.gassafebot.co.uk/gas-engineer-marketing</loc></url>
-<url><loc>https://www.gassafebot.co.uk/gas-engineer-marketing/swindon</loc></url>
-<url><loc>https://www.gassafebot.co.uk/gas-engineer-marketing/peterborough</loc></url>
-<url><loc>https://www.gassafebot.co.uk/gas-engineer-marketing/telford</loc></url>
-<url><loc>https://www.gassafebot.co.uk/gas-engineer-marketing/northampton</loc></url>
-<url><loc>https://www.gassafebot.co.uk/gas-engineer-marketing/gloucester</loc></url>
-<url><loc>https://www.gassafebot.co.uk/gas-engineer-marketing/basildon</loc></url>
-<url><loc>https://www.gassafebot.co.uk/gas-engineer-marketing/cheltenham</loc></url>
-<url><loc>https://www.gassafebot.co.uk/gas-engineer-marketing/wakefield</loc></url>
-<url><loc>https://www.gassafebot.co.uk/gas-engineer-marketing/derby</loc></url>
-<url><loc>https://www.gassafebot.co.uk/gas-engineer-marketing/luton</loc></url>
-<url><loc>https://www.gassafebot.co.uk/emma-demo</loc></url>
-<url><loc>https://www.gassafebot.co.uk/sample-audit</loc></url>
-<url><loc>https://www.gassafebot.co.uk/sample-ranking-plan</loc></url>
-<url><loc>https://www.gassafebot.co.uk/sample-website</loc></url>
-<url><loc>https://www.gassafebot.co.uk/pricing</loc></url>
+  <url>
+    <loc>https://www.gassafebot.co.uk/</loc>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://www.gassafebot.co.uk/gas-engineer-marketing</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.gassafebot.co.uk/gas-engineer-marketing/swindon</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.gassafebot.co.uk/gas-engineer-marketing/peterborough</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.gassafebot.co.uk/gas-engineer-marketing/telford</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.gassafebot.co.uk/gas-engineer-marketing/northampton</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.gassafebot.co.uk/gas-engineer-marketing/gloucester</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.gassafebot.co.uk/gas-engineer-marketing/basildon</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.gassafebot.co.uk/gas-engineer-marketing/cheltenham</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.gassafebot.co.uk/gas-engineer-marketing/wakefield</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.gassafebot.co.uk/gas-engineer-marketing/derby</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.gassafebot.co.uk/gas-engineer-marketing/luton</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.gassafebot.co.uk/emma-demo</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.gassafebot.co.uk/sample-audit</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.gassafebot.co.uk/sample-ranking-plan</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.gassafebot.co.uk/sample-website</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.gassafebot.co.uk/pricing</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
 </urlset>
