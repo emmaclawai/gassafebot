@@ -5,6 +5,7 @@ import FaqAccordion from '@/components/FaqAccordion'
 import ScrollReveal from '@/components/ScrollReveal'
 import Link from 'next/link'
 import { getPhase1Cities } from '@/content/cities'
+import { WrenchIcon, MapPinIcon, PhoneIcon, GlobeAltIcon, BoltIcon, FireIcon, XCircleIcon, CheckCircleIcon } from '@heroicons/react/24/outline'
 
 export const metadata: Metadata = {
   title: 'GasSafeBot | Websites & Local SEO for Gas Safe Engineers | UK',
@@ -102,13 +103,13 @@ export default function HomePage() {
               <a href="#packages" className="btn btn-outline">Compare Packages</a>
             </div>
             <div className="hero-proof">
-              <span className="hero-proof-icon" aria-hidden="true">✓</span>
+              <span className="hero-proof-icon" aria-hidden="true"><CheckCircleIcon className="w-4 h-4" /></span>
               Built for UK heating businesses
               <span aria-hidden="true">&nbsp;·&nbsp;</span>
-              <span className="hero-proof-icon" aria-hidden="true">✓</span>
+              <span className="hero-proof-icon" aria-hidden="true"><CheckCircleIcon className="w-4 h-4" /></span>
               You own your website &amp; domain
               <span aria-hidden="true">&nbsp;·&nbsp;</span>
-              <span className="hero-proof-icon" aria-hidden="true">✓</span>
+              <span className="hero-proof-icon" aria-hidden="true"><CheckCircleIcon className="w-4 h-4" /></span>
               Rolling monthly support
             </div>
             <div className="hero-stats">
@@ -131,11 +132,11 @@ export default function HomePage() {
         {/* ── TRUST BAR ── */}
         <div className="trust">
           <div className="container trust-inner">
-            <div className="trust-item">🔧 <strong>Gas Safe specialists</strong> — we know your trade</div>
-            <div className="trust-item">📍 <strong>Local SEO</strong> — rank in every area you cover</div>
-            <div className="trust-item">📞 <strong>Emma</strong> — AI receptionist, never misses a call</div>
-            <div className="trust-item">🇬🇧 <strong>UK only</strong> — built for British engineers</div>
-            <div className="trust-item">⚡ <strong>Fast builds</strong> — typically live within 2 weeks</div>
+            <div className="trust-item"><WrenchIcon className="w-4 h-4 inline" /> <strong>Gas Safe specialists</strong> — we know your trade</div>
+            <div className="trust-item"><MapPinIcon className="w-4 h-4 inline" /> <strong>Local SEO</strong> — rank in every area you cover</div>
+            <div className="trust-item"><PhoneIcon className="w-4 h-4 inline" /> <strong>Emma</strong> — AI receptionist, never misses a call</div>
+            <div className="trust-item"><GlobeAltIcon className="w-4 h-4 inline" /> <strong>UK only</strong> — built for British engineers</div>
+            <div className="trust-item"><BoltIcon className="w-4 h-4 inline" /> <strong>Fast builds</strong> — typically live within 2 weeks</div>
           </div>
         </div>
 
@@ -153,21 +154,21 @@ export default function HomePage() {
                   </p>
                   <div className="problem-points">
                     <div className="problem-point bad">
-                      <span className="pp-icon" aria-hidden="true">❌</span>
+                      <span className="pp-icon" aria-hidden="true"><XCircleIcon className="w-6 h-6" /></span>
                       <div className="pp-text">
                         <h4>Generic websites that don&apos;t rank</h4>
                         <p>A web designer builds you a pretty site but has no idea how to get &quot;gas engineer Manchester&quot; on page one. It sits on page four — invisible.</p>
                       </div>
                     </div>
                     <div className="problem-point bad">
-                      <span className="pp-icon" aria-hidden="true">❌</span>
+                      <span className="pp-icon" aria-hidden="true"><XCircleIcon className="w-6 h-6" /></span>
                       <div className="pp-text">
                         <h4>Missing calls while you&apos;re on the job</h4>
                         <p>You&apos;re up a loft or under a boiler. A customer calls, gets no answer, and books someone else. Every missed call is lost revenue.</p>
                       </div>
                     </div>
                     <div className="problem-point bad">
-                      <span className="pp-icon" aria-hidden="true">❌</span>
+                      <span className="pp-icon" aria-hidden="true"><XCircleIcon className="w-6 h-6" /></span>
                       <div className="pp-text">
                         <h4>Paying Checkatrade for leads you could own</h4>
                         <p>Directory sites take your money and show customers your competitors too. We build you an asset you own, so you&apos;re less reliant on rented leads from third-party platforms.</p>
@@ -181,21 +182,21 @@ export default function HomePage() {
                   <h2>Websites and Local SEO Built To <span>Win More Enquiries</span></h2>
                   <div className="problem-points" style={{ marginTop: '1.5rem' }}>
                     <div className="problem-point good">
-                      <span className="pp-icon" aria-hidden="true">🔥</span>
+                      <span className="pp-icon" aria-hidden="true"><FireIcon className="w-6 h-6" /></span>
                       <div className="pp-text">
                         <h4>Websites built to rank — not just look good</h4>
                         <p>Every page, every word, every technical detail is built around getting you found when gas engineers in your area are searched for on Google.</p>
                       </div>
                     </div>
                     <div className="problem-point good">
-                      <span className="pp-icon" aria-hidden="true">📞</span>
+                      <span className="pp-icon" aria-hidden="true"><PhoneIcon className="w-6 h-6" /></span>
                       <div className="pp-text">
                         <h4>Emma answers every call 24/7</h4>
                         <p>Our AI receptionist Emma qualifies callers, captures their details, and syncs bookings to your calendar. You never miss a job again.</p>
                       </div>
                     </div>
                     <div className="problem-point good">
-                      <span className="pp-icon" aria-hidden="true">📍</span>
+                      <span className="pp-icon" aria-hidden="true"><MapPinIcon className="w-6 h-6" /></span>
                       <div className="pp-text">
                         <h4>Local SEO that builds your own pipeline</h4>
                         <p>We optimise your Google Business Profile, build local citations, and create area pages so customers in every town you cover can find you.</p>
@@ -233,7 +234,7 @@ export default function HomePage() {
                   </ul>
                 </div>
                 <div className="service-card">
-                  <span className="service-icon" aria-hidden="true">📍</span>
+                  <span className="service-icon" aria-hidden="true"><MapPinIcon className="w-8 h-8" /></span>
                   <h3>Local SEO</h3>
                   <p>Dominate the map pack and organic results in every area you work. We handle every aspect of local search — Google Business, citations, reviews, and ongoing content.</p>
                   <ul className="service-includes" aria-label="What's included">
@@ -246,7 +247,7 @@ export default function HomePage() {
                   </ul>
                 </div>
                 <div className="service-card">
-                  <span className="service-icon" aria-hidden="true">📞</span>
+                  <span className="service-icon" aria-hidden="true"><PhoneIcon className="w-8 h-8" /></span>
                   <h3>Emma — Voice Receptionist</h3>
                   <p>Our AI receptionist answers every inbound call, 24 hours a day, 7 days a week. She identifies caller type, flags urgency, and keeps your diary full while you&apos;re on the tools.</p>
                   <ul className="service-includes" aria-label="Emma features">
@@ -367,13 +368,20 @@ export default function HomePage() {
                   <div className="pkg-monthly">then <strong>£197/month</strong></div>
                   <hr className="pkg-divider" />
                   <ul className="pkg-features">
-                    <li><span className="tick" aria-hidden="true">✓</span> 5-page professional website</li>
-                    <li><span className="tick" aria-hidden="true">✓</span> 1 local area SEO target</li>
-                    <li><span className="tick" aria-hidden="true">✓</span> Google Business Profile setup</li>
-                    <li><span className="tick" aria-hidden="true">✓</span> Mobile-first, fast loading</li>
-                    <li><span className="tick" aria-hidden="true">✓</span> Contact form with instant lead alerts</li>
-                    <li><span className="tick" aria-hidden="true">✓</span> Schema markup</li>
-                    <li><span className="tick" aria-hidden="true">✓</span> Monthly ranking report</li>
+                    <li><span className="tick" aria-hidden="true"><CheckCircleIcon className="w-4 h-4" />
+    </span> 5-page professional website</li>
+                    <li><span className="tick" aria-hidden="true"><CheckCircleIcon className="w-4 h-4" />
+    </span> 1 local area SEO target</li>
+                    <li><span className="tick" aria-hidden="true"><CheckCircleIcon className="w-4 h-4" />
+    </span> Google Business Profile setup</li>
+                    <li><span className="tick" aria-hidden="true"><CheckCircleIcon className="w-4 h-4" />
+    </span> Mobile-first, fast loading</li>
+                    <li><span className="tick" aria-hidden="true"><CheckCircleIcon className="w-4 h-4" />
+    </span> Contact form with instant lead alerts</li>
+                    <li><span className="tick" aria-hidden="true"><CheckCircleIcon className="w-4 h-4" />
+    </span> Schema markup</li>
+                    <li><span className="tick" aria-hidden="true"><CheckCircleIcon className="w-4 h-4" />
+    </span> Monthly ranking report</li>
                     <li><span className="cross" aria-hidden="true">–</span> <span style={{ color: 'var(--dim)' }}>Multiple area pages</span></li>
                     <li><span className="cross" aria-hidden="true">–</span> <span style={{ color: 'var(--dim)' }}>Competitor gap analysis</span></li>
                   </ul>
@@ -388,15 +396,24 @@ export default function HomePage() {
                   <div className="pkg-monthly">then <strong>£347/month</strong></div>
                   <hr className="pkg-divider" />
                   <ul className="pkg-features">
-                    <li><span className="tick" aria-hidden="true">✓</span> 8-page website with area landing pages</li>
-                    <li><span className="tick" aria-hidden="true">✓</span> 3 local area SEO targets</li>
-                    <li><span className="tick" aria-hidden="true">✓</span> Google Business Profile full optimisation</li>
-                    <li><span className="tick" aria-hidden="true">✓</span> Competitor gap analysis</li>
-                    <li><span className="tick" aria-hidden="true">✓</span> Citation building (20+ directories)</li>
-                    <li><span className="tick" aria-hidden="true">✓</span> Blog setup (2 posts included)</li>
-                    <li><span className="tick" aria-hidden="true">✓</span> Google reviews strategy</li>
-                    <li><span className="tick" aria-hidden="true">✓</span> Monthly keyword ranking report</li>
-                    <li><span className="tick" aria-hidden="true">✓</span> Priority email support</li>
+                    <li><span className="tick" aria-hidden="true"><CheckCircleIcon className="w-4 h-4" />
+    </span> 8-page website with area landing pages</li>
+                    <li><span className="tick" aria-hidden="true"><CheckCircleIcon className="w-4 h-4" />
+    </span> 3 local area SEO targets</li>
+                    <li><span className="tick" aria-hidden="true"><CheckCircleIcon className="w-4 h-4" />
+    </span> Google Business Profile full optimisation</li>
+                    <li><span className="tick" aria-hidden="true"><CheckCircleIcon className="w-4 h-4" />
+    </span> Competitor gap analysis</li>
+                    <li><span className="tick" aria-hidden="true"><CheckCircleIcon className="w-4 h-4" />
+    </span> Citation building (20+ directories)</li>
+                    <li><span className="tick" aria-hidden="true"><CheckCircleIcon className="w-4 h-4" />
+    </span> Blog setup (2 posts included)</li>
+                    <li><span className="tick" aria-hidden="true"><CheckCircleIcon className="w-4 h-4" />
+    </span> Google reviews strategy</li>
+                    <li><span className="tick" aria-hidden="true"><CheckCircleIcon className="w-4 h-4" />
+    </span> Monthly keyword ranking report</li>
+                    <li><span className="tick" aria-hidden="true"><CheckCircleIcon className="w-4 h-4" />
+    </span> Priority email support</li>
                   </ul>
                   <a href="#contact" className="pkg-cta">Get Started →</a>
                 </div>
@@ -408,15 +425,24 @@ export default function HomePage() {
                   <div className="pkg-monthly">then <strong>£597/month</strong></div>
                   <hr className="pkg-divider" />
                   <ul className="pkg-features">
-                    <li><span className="tick" aria-hidden="true">✓</span> Full website — unlimited pages</li>
-                    <li><span className="tick" aria-hidden="true">✓</span> 10 local area SEO targets</li>
-                    <li><span className="tick" aria-hidden="true">✓</span> Full citation building (50+ directories)</li>
-                    <li><span className="tick" aria-hidden="true">✓</span> Monthly blog content (1 post/month)</li>
-                    <li><span className="tick" aria-hidden="true">✓</span> Competitor monitoring alerts</li>
-                    <li><span className="tick" aria-hidden="true">✓</span> Quarterly strategy review call</li>
-                    <li><span className="tick" aria-hidden="true">✓</span> Priority support (same-day response)</li>
-                    <li><span className="tick" aria-hidden="true">✓</span> Advanced schema &amp; rich results</li>
-                    <li><span className="tick" aria-hidden="true">✓</span> Link building campaign</li>
+                    <li><span className="tick" aria-hidden="true"><CheckCircleIcon className="w-4 h-4" />
+    </span> Full website — unlimited pages</li>
+                    <li><span className="tick" aria-hidden="true"><CheckCircleIcon className="w-4 h-4" />
+    </span> 10 local area SEO targets</li>
+                    <li><span className="tick" aria-hidden="true"><CheckCircleIcon className="w-4 h-4" />
+    </span> Full citation building (50+ directories)</li>
+                    <li><span className="tick" aria-hidden="true"><CheckCircleIcon className="w-4 h-4" />
+    </span> Monthly blog content (1 post/month)</li>
+                    <li><span className="tick" aria-hidden="true"><CheckCircleIcon className="w-4 h-4" />
+    </span> Competitor monitoring alerts</li>
+                    <li><span className="tick" aria-hidden="true"><CheckCircleIcon className="w-4 h-4" />
+    </span> Quarterly strategy review call</li>
+                    <li><span className="tick" aria-hidden="true"><CheckCircleIcon className="w-4 h-4" />
+    </span> Priority support (same-day response)</li>
+                    <li><span className="tick" aria-hidden="true"><CheckCircleIcon className="w-4 h-4" />
+    </span> Advanced schema &amp; rich results</li>
+                    <li><span className="tick" aria-hidden="true"><CheckCircleIcon className="w-4 h-4" />
+    </span> Link building campaign</li>
                   </ul>
                   <a href="#contact" className="pkg-cta">Get Started →</a>
                 </div>
@@ -489,7 +515,7 @@ export default function HomePage() {
                       </div>
                     </div>
                     <div className="why-point">
-                      <div className="why-icon" aria-hidden="true">⚡</div>
+                      <div className="why-icon" aria-hidden="true"><BoltIcon className="w-6 h-6" /></div>
                       <div>
                         <h3>Live in Typically 2 Weeks</h3>
                         <p>We don&apos;t take months to build a website. Once you&apos;re onboarded, your site is typically live and the SEO work begins within 10 business days.</p>
