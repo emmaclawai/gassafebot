@@ -80,7 +80,7 @@ export const metadata: Metadata = {
     images: ['/og-default.png'],
   },
   verification: {
-    google: 'your-google-verification-code',
+    google: 'CWroRzx2pZAFt2QnGXNRuXai7oCR7sbRw_kLhz7uCkA',
   },
 }
 
