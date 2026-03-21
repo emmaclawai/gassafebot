@@ -5,7 +5,7 @@ import FaqAccordion from '@/components/FaqAccordion'
 import ScrollReveal from '@/components/ScrollReveal'
 import Link from 'next/link'
 import { getPhase1Cities } from '@/content/cities'
-import { WrenchIcon, MapPinIcon, PhoneIcon, GlobeAltIcon, BoltIcon, FireIcon, XCircleIcon, CheckCircleIcon } from '@heroicons/react/24/outline'
+import { WrenchIcon, MapPinIcon, PhoneIcon, GlobeAltIcon, BoltIcon, FireIcon, XCircleIcon, CheckCircleIcon, ComputerDesktopIcon, ChartBarIcon, LockClosedIcon, ClockIcon, TrophyIcon, EnvelopeIcon, CurrencyPoundIcon, MapIcon, SpeakerWaveIcon } from '@heroicons/react/24/outline'
 
 export const metadata: Metadata = {
   title: 'GasSafeBot | Websites & Local SEO for Gas Safe Engineers | UK',
@@ -221,7 +221,7 @@ export default function HomePage() {
             <ScrollReveal>
               <div className="services-grid reveal">
                 <div className="service-card">
-                  <span className="service-icon" aria-hidden="true">🖥️</span>
+                  <span className="service-icon" aria-hidden="true"><ComputerDesktopIcon className="w-8 h-8" /></span>
                   <h3>Ranking Website</h3>
                   <p>A professional, fast-loading website built from the ground up to rank for gas engineer searches in your target areas. Written by us, optimised for Google from day one.</p>
                   <ul className="service-includes" aria-label="What's included">
@@ -296,54 +296,6 @@ export default function HomePage() {
                   <h3>We Grow</h3>
                   <p>Monthly reports, fresh content, ranking maintenance, and Emma handling your calls. The retainer keeps you at the top — and expanding into new areas as your business grows.</p>
                 </div>
-              </div>
-            </ScrollReveal>
-          </div>
-        </section>
-
-        {/* ── PROOF ── */}
-        <section className="section section--mid" id="proof">
-          <div className="container">
-            <div className="eyebrow">Proof Over Promises</div>
-            <h2>We&apos;re Building <span>Our Own Rankings First</span></h2>
-            <p className="lead">
-              GasSafeBot is new. Rather than pretend we have a long list of case studies, we&apos;re doing
-              something better — building this site to rank publicly for gas engineer marketing keywords, and
-              documenting the process so you can see exactly how it works before you spend anything.
-            </p>
-
-            <ScrollReveal>
-              <div className="proof-grid reveal">
-                <a href="/sample-audit" className="proof-card">
-                  <span className="proof-card-icon" aria-hidden="true">📊</span>
-                  <h3>See a Demo Audit</h3>
-                  <p>Review the kind of technical, local SEO, and conversion audit we produce for your business before you spend anything.</p>
-                  <span className="arrow">View Demo Audit →</span>
-                </a>
-                <a href="/sample-ranking-plan" className="proof-card">
-                  <span className="proof-card-icon" aria-hidden="true">🗺️</span>
-                  <h3>View a Sample Ranking Plan</h3>
-                  <p>See how we map target towns, postcodes, pages, services, and Google Business Profile actions into a structured ranking plan.</p>
-                  <span className="arrow">View Sample Plan →</span>
-                </a>
-                <a href="/sample-website" className="proof-card">
-                  <span className="proof-card-icon" aria-hidden="true">🖥️</span>
-                  <h3>See a Sample Website</h3>
-                  <p>Preview the style, structure, service pages, local landing pages, and enquiry flow we build for gas engineers.</p>
-                  <span className="arrow">View Sample Site →</span>
-                </a>
-                <a href="/emma-demo" className="proof-card">
-                  <span className="proof-card-icon" aria-hidden="true">🎧</span>
-                  <h3>Listen to Emma Answer a Call</h3>
-                  <p>Hear exactly how Emma handles inbound calls, qualifies urgency, and captures job details while you&apos;re on-site.</p>
-                  <span className="arrow">Hear Emma →</span>
-                </a>
-                <a href="#packages" className="proof-card">
-                  <span className="proof-card-icon" aria-hidden="true">💷</span>
-                  <h3>Compare Packages</h3>
-                  <p>See exactly what changes between Pilot, Growth, and Dominator so you can choose the right level for your area and goals.</p>
-                  <span className="arrow">Compare Packages →</span>
-                </a>
               </div>
             </ScrollReveal>
           </div>
@@ -494,21 +446,21 @@ export default function HomePage() {
                   </p>
                   <div className="why-points">
                     <div className="why-point">
-                      <div className="why-icon" aria-hidden="true">🎯</div>
+                      <div className="why-icon" aria-hidden="true"><TrophyIcon className="w-6 h-6" /></div>
                       <div>
                         <h3>We know how customers search</h3>
                         <p>We&apos;ve researched every keyword your potential customers use — boiler repair, gas safety certificate, annual service, emergency callout. We target all of them.</p>
                       </div>
                     </div>
                     <div className="why-point">
-                      <div className="why-icon" aria-hidden="true">🔒</div>
+                      <div className="why-icon" aria-hidden="true"><LockClosedIcon className="w-6 h-6" /></div>
                       <div>
                         <h3>You own everything outright</h3>
                         <p>Your domain, your website, your Google account, your data. We set it all up in your name. Cancel anytime and keep everything. No lock-in, no surprises.</p>
                       </div>
                     </div>
                     <div className="why-point">
-                      <div className="why-icon" aria-hidden="true">📊</div>
+                      <div className="why-icon" aria-hidden="true"><ChartBarIcon className="w-6 h-6" /></div>
                       <div>
                         <h3>Monthly proof your retainer is working</h3>
                         <p>Every month you get a ranking report showing exactly where your keywords sit, what&apos;s moved, and what we&apos;re doing next. You see exactly where your money goes.</p>
@@ -615,6 +567,54 @@ export default function HomePage() {
           </div>
         </section>
 
+        {/* ── PROOF ── */}
+        <section className="section section--mid" id="proof">
+          <div className="container">
+            <div className="eyebrow">Proof Over Promises</div>
+            <h2>We&apos;re Building <span>Our Own Rankings First</span></h2>
+            <p className="lead">
+              GasSafeBot is new. Rather than pretend we have a long list of case studies, we&apos;re doing
+              something better — building this site to rank publicly for gas engineer marketing keywords, and
+              documenting the process so you can see exactly how it works before you spend anything.
+            </p>
+
+            <ScrollReveal>
+              <div className="proof-grid reveal">
+                <a href="/sample-audit" className="proof-card">
+                  <span className="proof-card-icon" aria-hidden="true"><ChartBarIcon className="w-8 h-8" /></span>
+                  <h3>See a Demo Audit</h3>
+                  <p>Review the kind of technical, local SEO, and conversion audit we produce for your business before you spend anything.</p>
+                  <span className="arrow">View Demo Audit →</span>
+                </a>
+                <a href="/sample-ranking-plan" className="proof-card">
+                  <span className="proof-card-icon" aria-hidden="true"><MapIcon className="w-8 h-8" /></span>
+                  <h3>View a Sample Ranking Plan</h3>
+                  <p>See how we map target towns, postcodes, pages, services, and Google Business Profile actions into a structured ranking plan.</p>
+                  <span className="arrow">View Sample Plan →</span>
+                </a>
+                <a href="/sample-website" className="proof-card">
+                  <span className="proof-card-icon" aria-hidden="true"><ComputerDesktopIcon className="w-8 h-8" /></span>
+                  <h3>See a Sample Website</h3>
+                  <p>Preview the style, structure, service pages, local landing pages, and enquiry flow we build for gas engineers.</p>
+                  <span className="arrow">View Sample Site →</span>
+                </a>
+                <a href="/emma-demo" className="proof-card">
+                  <span className="proof-card-icon" aria-hidden="true"><SpeakerWaveIcon className="w-8 h-8" /></span>
+                  <h3>Listen to Emma Answer a Call</h3>
+                  <p>Hear exactly how Emma handles inbound calls, qualifies urgency, and captures job details while you&apos;re on-site.</p>
+                  <span className="arrow">Hear Emma →</span>
+                </a>
+                <a href="#packages" className="proof-card">
+                  <span className="proof-card-icon" aria-hidden="true"><CurrencyPoundIcon className="w-8 h-8" /></span>
+                  <h3>Compare Packages</h3>
+                  <p>See exactly what changes between Pilot, Growth, and Dominator so you can choose the right level for your area and goals.</p>
+                  <span className="arrow">Compare Packages →</span>
+                </a>
+              </div>
+            </ScrollReveal>
+          </div>
+        </section>
+
         {/* ── FAQ ── */}
         <section className="section section--mid" id="faq">
           <div className="container">
@@ -660,28 +660,28 @@ export default function HomePage() {
                     competition, and send you a clear ranking plan — completely free.
                   </p>
                   <div className="contact-detail">
-                    <div className="cd-icon" aria-hidden="true">⏱️</div>
+                    <div className="cd-icon" aria-hidden="true"><ClockIcon className="w-6 h-6" /></div>
                     <div className="cd-info">
                       <h4>Response time</h4>
                       <p>Audit sent within 1 business day</p>
                     </div>
                   </div>
                   <div className="contact-detail">
-                    <div className="cd-icon" aria-hidden="true">🎯</div>
+                    <div className="cd-icon" aria-hidden="true"><TrophyIcon className="w-6 h-6" /></div>
                     <div className="cd-info">
                       <h4>What you&apos;ll get</h4>
                       <p>Competitor analysis, keyword targets, realistic ranking assessment, recommended package</p>
                     </div>
                   </div>
                   <div className="contact-detail">
-                    <div className="cd-icon" aria-hidden="true">🔒</div>
+                    <div className="cd-icon" aria-hidden="true"><LockClosedIcon className="w-6 h-6" /></div>
                     <div className="cd-info">
                       <h4>No obligation</h4>
                       <p>Free audit, no sales pressure, no unsolicited calls. Just useful, honest information.</p>
                     </div>
                   </div>
                   <div className="contact-detail">
-                    <div className="cd-icon" aria-hidden="true">✉️</div>
+                    <div className="cd-icon" aria-hidden="true"><EnvelopeIcon className="w-6 h-6" /></div>
                     <div className="cd-info">
                       <h4>Direct contact</h4>
                       <p><a href="mailto:hello@gassafebot.co.uk" style={{ color: 'var(--fire)', textDecoration: 'none' }}>hello@gassafebot.co.uk</a></p>
