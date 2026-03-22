@@ -62,26 +62,26 @@ export default function AuditForm() {
     setServerError(false)
 
     try {
+      const formData = new FormData()
+      formData.append('email', form.email)
+      formData.append('name', form.name)
+      formData.append('business', form.business)
+      formData.append('phone', form.phone)
+      formData.append('postcode', form.postcode)
+      formData.append('gas_safe_no', form.gasno)
+      formData.append('target_areas', form.areas)
+      formData.append('current_website', form.site)
+      formData.append('package_interest', form.pkg)
+      formData.append('message', form.msg)
+      formData.append('submitted_at', new Date().toISOString())
+      formData.append('source', 'gassafebot.co.uk')
+
       const res = await fetch('https://formspree.io/f/maqplbpp', {
         method: 'POST',
+        body: formData,
         headers: {
-          'Content-Type': 'application/json',
           'Accept': 'application/json'
-        },
-        body: JSON.stringify({
-          name: form.name,
-          business: form.business,
-          email: form.email,
-          phone: form.phone,
-          postcode: form.postcode,
-          gas_safe_no: form.gasno,
-          target_areas: form.areas,
-          current_website: form.site,
-          package_interest: form.pkg,
-          message: form.msg,
-          submitted_at: new Date().toISOString(),
-          source: 'gassafebot.co.uk',
-        }),
+        }
       })
 
       if (!res.ok) throw new Error('API error')
