@@ -5,12 +5,12 @@ export const metadata: Metadata = {
   title: 'Gas Engineer Marketing Basildon | Rank #1 on Google | GasSafeBot',
   description: 'We help Gas Safe engineers in Basildon dominate Google. Websites built for local search, AI receptionist, SEO targeting SS13–SS16 postcodes. Free audit.',
   alternates: {
-    canonical: 'https://gassafebot.co.uk/gas-engineer-marketing/basildon'
+    canonical: 'https://gassafebot.co.uk/gas-engineer-marketing/basildon/'
   },
   openGraph: {
     title: 'Gas Engineer Marketing Basildon | GasSafeBot',
     description: 'Rank #1 on Google for gas engineer searches across Basildon and the surrounding area.',
-    url: 'https://gassafebot.co.uk/gas-engineer-marketing/basildon',
+    url: 'https://gassafebot.co.uk/gas-engineer-marketing/basildon/',
     type: 'website',
   },
 }

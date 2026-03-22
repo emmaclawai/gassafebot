@@ -5,12 +5,12 @@ export const metadata: Metadata = {
   title: 'Gas Engineer Marketing Northampton | Rank #1 on Google | GasSafeBot',
   description: 'We help Gas Safe engineers in Northampton dominate Google. Websites built for local search, AI receptionist, SEO targeting NN1–NN5 postcodes. Free audit.',
   alternates: {
-    canonical: 'https://gassafebot.co.uk/gas-engineer-marketing/northampton'
+    canonical: 'https://gassafebot.co.uk/gas-engineer-marketing/northampton/'
   },
   openGraph: {
     title: 'Gas Engineer Marketing Northampton | GasSafeBot',
     description: 'Rank #1 on Google for gas engineer searches across Northampton and the surrounding area.',
-    url: 'https://gassafebot.co.uk/gas-engineer-marketing/northampton',
+    url: 'https://gassafebot.co.uk/gas-engineer-marketing/northampton/',
     type: 'website',
   },
 }

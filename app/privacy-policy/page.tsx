@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title: 'Privacy Policy | GasSafeBot',
   description:
     'Privacy policy for GasSafeBot.co.uk. Learn how we collect, use, and protect your personal data.',
-  alternates: { canonical: 'https://gassafebot.co.uk/privacy-policy' },
+  alternates: { canonical: 'https://gassafebot.co.uk/privacy-policy/' },
   robots: { index: true, follow: true },
 }
 

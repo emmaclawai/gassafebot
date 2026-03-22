@@ -5,12 +5,12 @@ export const metadata: Metadata = {
   title: 'Gas Engineer Marketing Derby | Rank #1 on Google | GasSafeBot',
   description: 'We help Gas Safe engineers in Derby dominate Google. Websites built for local search, AI receptionist, SEO targeting DE1–DE24 postcodes. Free audit.',
   alternates: {
-    canonical: 'https://gassafebot.co.uk/gas-engineer-marketing/derby'
+    canonical: 'https://gassafebot.co.uk/gas-engineer-marketing/derby/'
   },
   openGraph: {
     title: 'Gas Engineer Marketing Derby | GasSafeBot',
     description: 'Rank #1 on Google for gas engineer searches across Derby and the surrounding area.',
-    url: 'https://gassafebot.co.uk/gas-engineer-marketing/derby',
+    url: 'https://gassafebot.co.uk/gas-engineer-marketing/derby/',
     type: 'website',
   },
 }

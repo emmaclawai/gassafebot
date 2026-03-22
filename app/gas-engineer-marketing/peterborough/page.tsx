@@ -5,12 +5,12 @@ export const metadata: Metadata = {
   title: 'Gas Engineer Marketing Peterborough | Rank #1 on Google | GasSafeBot',
   description: 'We help Gas Safe engineers in Peterborough dominate Google. Websites built for local search, AI receptionist, SEO targeting PE1–PE7 postcodes. Free audit.',
   alternates: {
-    canonical: 'https://gassafebot.co.uk/gas-engineer-marketing/peterborough'
+    canonical: 'https://gassafebot.co.uk/gas-engineer-marketing/peterborough/'
   },
   openGraph: {
     title: 'Gas Engineer Marketing Peterborough | GasSafeBot',
     description: 'Rank #1 on Google for gas engineer searches across Peterborough and the PE postcode area.',
-    url: 'https://gassafebot.co.uk/gas-engineer-marketing/peterborough',
+    url: 'https://gassafebot.co.uk/gas-engineer-marketing/peterborough/',
     type: 'website',
   },
 }

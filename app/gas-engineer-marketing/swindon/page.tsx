@@ -6,12 +6,12 @@ export const metadata: Metadata = {
   description: 'We help Gas Safe engineers in Swindon dominate Google. Websites built for local search, AI receptionist that never misses a call, and SEO targeting SN1–SN5 postcodes. First audit is free.',
   keywords: 'gas engineer marketing Swindon, gas engineer website Swindon, boiler engineer SEO Swindon, Gas Safe engineer Swindon, heating engineer website SN1 SN2 SN3',
   alternates: {
-    canonical: 'https://gassafebot.co.uk/gas-engineer-marketing/swindon',
+    canonical: 'https://gassafebot.co.uk/gas-engineer-marketing/swindon/',
   },
   openGraph: {
     title: 'Gas Engineer Marketing Swindon | GasSafeBot',
     description: 'Rank #1 on Google for gas engineer searches across Swindon, Old Town, Wroughton, Freshbrook and the wider SN postcode area.',
-    url: 'https://gassafebot.co.uk/gas-engineer-marketing/swindon',
+    url: 'https://gassafebot.co.uk/gas-engineer-marketing/swindon/',
     type: 'website',
   },
 }

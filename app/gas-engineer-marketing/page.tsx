@@ -5,12 +5,12 @@ export const metadata: Metadata = {
   title: 'Gas Engineer Marketing | Local SEO for Heating Engineers | UK Cities',
   description: 'Gas engineer marketing services across UK cities. Professional websites, local SEO, and AI receptionists to help Gas Safe engineers dominate Google in their target areas.',
   alternates: {
-    canonical: 'https://gassafebot.co.uk/gas-engineer-marketing',
+    canonical: 'https://gassafebot.co.uk/gas-engineer-marketing/',
   },
   openGraph: {
     title: 'Gas Engineer Marketing | GasSafeBot',
     description: 'Professional websites and local SEO for Gas Safe engineers across UK cities.',
-    url: 'https://gassafebot.co.uk/gas-engineer-marketing',
+    url: 'https://gassafebot.co.uk/gas-engineer-marketing/',
     type: 'website',
   },
 }
@@ -39,7 +39,7 @@ export default function GasEngineerMarketingPage() {
             '@type': 'CollectionPage',
             name: 'Gas Engineer Marketing',
             description: 'Local SEO and website services for Gas Safe engineers across UK cities',
-            url: 'https://gassafebot.co.uk/gas-engineer-marketing',
+            url: 'https://gassafebot.co.uk/gas-engineer-marketing/',
             mainEntity: {
               '@type': 'ItemList',
               itemListElement: cities.map((city, index) => ({

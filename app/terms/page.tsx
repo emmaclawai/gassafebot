@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title: 'Terms of Service | GasSafeBot',
   description:
     'Terms of service for GasSafeBot.co.uk. Read our service terms, payment conditions, and cancellation policy.',
-  alternates: { canonical: 'https://gassafebot.co.uk/terms' },
+  alternates: { canonical: 'https://gassafebot.co.uk/terms/' },
   robots: { index: true, follow: true },
 }
 

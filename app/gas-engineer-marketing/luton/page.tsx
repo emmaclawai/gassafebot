@@ -5,12 +5,12 @@ export const metadata: Metadata = {
   title: 'Gas Engineer Marketing Luton | Rank #1 on Google | GasSafeBot',
   description: 'We help Gas Safe engineers in Luton dominate Google. Websites built for local search, AI receptionist, SEO targeting LU1–LU4 postcodes. Free audit.',
   alternates: {
-    canonical: 'https://gassafebot.co.uk/gas-engineer-marketing/luton'
+    canonical: 'https://gassafebot.co.uk/gas-engineer-marketing/luton/'
   },
   openGraph: {
     title: 'Gas Engineer Marketing Luton | GasSafeBot',
     description: 'Rank #1 on Google for gas engineer searches across Luton and the surrounding area.',
-    url: 'https://gassafebot.co.uk/gas-engineer-marketing/luton',
+    url: 'https://gassafebot.co.uk/gas-engineer-marketing/luton/',
     type: 'website',
   },
 }

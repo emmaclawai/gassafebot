@@ -5,12 +5,12 @@ export const metadata: Metadata = {
   title: 'Gas Engineer Marketing Gloucester | Rank #1 on Google | GasSafeBot',
   description: 'We help Gas Safe engineers in Gloucester dominate Google. Websites built for local search, AI receptionist, SEO targeting GL1–GL4 postcodes. Free audit.',
   alternates: {
-    canonical: 'https://gassafebot.co.uk/gas-engineer-marketing/gloucester'
+    canonical: 'https://gassafebot.co.uk/gas-engineer-marketing/gloucester/'
   },
   openGraph: {
     title: 'Gas Engineer Marketing Gloucester | GasSafeBot',
     description: 'Rank #1 on Google for gas engineer searches across Gloucester and the surrounding area.',
-    url: 'https://gassafebot.co.uk/gas-engineer-marketing/gloucester',
+    url: 'https://gassafebot.co.uk/gas-engineer-marketing/gloucester/',
     type: 'website',
   },
 }

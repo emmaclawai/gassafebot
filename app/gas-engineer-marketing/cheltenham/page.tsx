@@ -5,12 +5,12 @@ export const metadata: Metadata = {
   title: 'Gas Engineer Marketing Cheltenham | Rank #1 on Google | GasSafeBot',
   description: 'We help Gas Safe engineers in Cheltenham dominate Google. Websites built for local search, AI receptionist, SEO targeting GL50–GL53 postcodes. Free audit.',
   alternates: {
-    canonical: 'https://gassafebot.co.uk/gas-engineer-marketing/cheltenham'
+    canonical: 'https://gassafebot.co.uk/gas-engineer-marketing/cheltenham/'
   },
   openGraph: {
     title: 'Gas Engineer Marketing Cheltenham | GasSafeBot',
     description: 'Rank #1 on Google for gas engineer searches across Cheltenham and the surrounding area.',
-    url: 'https://gassafebot.co.uk/gas-engineer-marketing/cheltenham',
+    url: 'https://gassafebot.co.uk/gas-engineer-marketing/cheltenham/',
     type: 'website',
   },
 }

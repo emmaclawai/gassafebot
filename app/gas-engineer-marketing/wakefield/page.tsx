@@ -5,12 +5,12 @@ export const metadata: Metadata = {
   title: 'Gas Engineer Marketing Wakefield | Rank #1 on Google | GasSafeBot',
   description: 'We help Gas Safe engineers in Wakefield dominate Google. Websites built for local search, AI receptionist, SEO targeting WF1–WF4 postcodes. Free audit.',
   alternates: {
-    canonical: 'https://gassafebot.co.uk/gas-engineer-marketing/wakefield'
+    canonical: 'https://gassafebot.co.uk/gas-engineer-marketing/wakefield/'
   },
   openGraph: {
     title: 'Gas Engineer Marketing Wakefield | GasSafeBot',
     description: 'Rank #1 on Google for gas engineer searches across Wakefield and the surrounding area.',
-    url: 'https://gassafebot.co.uk/gas-engineer-marketing/wakefield',
+    url: 'https://gassafebot.co.uk/gas-engineer-marketing/wakefield/',
     type: 'website',
   },
 }

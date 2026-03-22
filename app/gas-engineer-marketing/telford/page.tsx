@@ -5,12 +5,12 @@ export const metadata: Metadata = {
   title: 'Gas Engineer Marketing Telford | Rank #1 on Google | GasSafeBot',
   description: 'We help Gas Safe engineers in Telford dominate Google. Websites built for local search, AI receptionist, SEO targeting TF1–TF7 postcodes. Free audit.',
   alternates: {
-    canonical: 'https://gassafebot.co.uk/gas-engineer-marketing/telford'
+    canonical: 'https://gassafebot.co.uk/gas-engineer-marketing/telford/'
   },
   openGraph: {
     title: 'Gas Engineer Marketing Telford | GasSafeBot',
     description: 'Rank #1 on Google for gas engineer searches across Telford and the surrounding area.',
-    url: 'https://gassafebot.co.uk/gas-engineer-marketing/telford',
+    url: 'https://gassafebot.co.uk/gas-engineer-marketing/telford/',
     type: 'website',
   },
 }
