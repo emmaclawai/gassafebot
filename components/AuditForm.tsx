@@ -64,7 +64,10 @@ export default function AuditForm() {
     try {
       const res = await fetch('https://formspree.io/f/maqplbpp', {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
+        headers: {
+          'Content-Type': 'application/json',
+          'Accept': 'application/json'
+        },
         body: JSON.stringify({
           name: form.name,
           business: form.business,
