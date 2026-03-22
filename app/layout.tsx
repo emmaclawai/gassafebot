@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import { Barlow, Barlow_Condensed } from 'next/font/google'
 import './globals.css'
+import CookieBanner from '@/components/CookieBanner'
 
 const barlow = Barlow({
   subsets: ['latin'],
@@ -100,6 +101,7 @@ export default function RootLayout({
           Skip to main content
         </a>
         {children}
+        <CookieBanner />
       </body>
     </html>
   )
