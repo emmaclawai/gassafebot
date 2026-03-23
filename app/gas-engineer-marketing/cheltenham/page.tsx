@@ -82,6 +82,20 @@ export default function CheltenhamPage() {
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
             '@context': 'https://schema.org',
+            '@type': 'BreadcrumbList',
+            itemListElement: [
+              { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://gassafebot.co.uk/' },
+              { '@type': 'ListItem', position: 2, name: 'Gas Engineer Marketing', item: 'https://gassafebot.co.uk/gas-engineer-marketing/' },
+              { '@type': 'ListItem', position: 3, name: 'Cheltenham', item: 'https://gassafebot.co.uk/gas-engineer-marketing/cheltenham/' },
+            ],
+          }),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
             '@type': 'Service',
             name: 'Gas Engineer Marketing Cheltenham',
             provider: {

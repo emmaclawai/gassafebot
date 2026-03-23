@@ -93,6 +93,20 @@ export default function SwindonPage() {
           }),
         }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'BreadcrumbList',
+            itemListElement: [
+              { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://gassafebot.co.uk/' },
+              { '@type': 'ListItem', position: 2, name: 'Gas Engineer Marketing', item: 'https://gassafebot.co.uk/gas-engineer-marketing/' },
+              { '@type': 'ListItem', position: 3, name: 'Swindon', item: 'https://gassafebot.co.uk/gas-engineer-marketing/swindon/' },
+            ],
+          }),
+        }}
+      />
       <main>
         {/* Breadcrumb */}
         <nav aria-label="Breadcrumb" style={{ padding: '1rem 0', fontSize: '0.85rem', color: 'var(--muted)' }}>

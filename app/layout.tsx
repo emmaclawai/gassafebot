@@ -85,6 +85,18 @@ export const metadata: Metadata = {
   },
 }
 
+const localBusinessSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'ProfessionalService',
+  name: 'GasSafeBot',
+  url: 'https://www.gassafebot.co.uk',
+  description: 'Websites, local SEO and AI receptionist for Gas Safe registered engineers across the UK',
+  email: 'hello@gassafebot.co.uk',
+  areaServed: 'GB',
+  serviceType: 'Marketing Agency',
+  priceRange: '££',
+}
+
 export default function RootLayout({
   children,
 }: {
@@ -95,6 +107,10 @@ export default function RootLayout({
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
+        />
       </head>
       <body className="antialiased">
         <a href="#main-content" className="skip-link">

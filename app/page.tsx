@@ -38,6 +38,72 @@ const serviceSchema = {
   ],
 }
 
+const rankingWebsiteServiceSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Service',
+  name: 'Ranking Website for Gas Engineers',
+  provider: { '@type': 'Organization', name: 'GasSafeBot' },
+  description: 'A professional, fast-loading website built from the ground up to rank for gas engineer searches in your target areas. Written by us, optimised for Google from day one.',
+  serviceType: 'Website Design',
+  areaServed: 'GB',
+  hasOfferCatalog: {
+    '@type': 'OfferCatalog',
+    name: 'Website Features',
+    itemListElement: [
+      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: '5-10 pages of SEO-optimised content' } },
+      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Mobile-first, sub-2s load time' } },
+      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Local area landing pages' } },
+      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Schema markup & technical SEO' } },
+      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Contact form with instant lead alerts' } },
+      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Fast UK-based hosting' } },
+    ],
+  },
+}
+
+const localSeoServiceSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Service',
+  name: 'Local SEO for Gas Engineers',
+  provider: { '@type': 'Organization', name: 'GasSafeBot' },
+  description: 'Dominate the map pack and organic results in every area you work. We handle every aspect of local search — Google Business, citations, reviews, and ongoing content.',
+  serviceType: 'Local SEO',
+  areaServed: 'GB',
+  hasOfferCatalog: {
+    '@type': 'OfferCatalog',
+    name: 'Local SEO Features',
+    itemListElement: [
+      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Google Business Profile setup & optimisation' } },
+      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Local citation building (50+ directories)' } },
+      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Area-specific landing pages' } },
+      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Review generation strategy' } },
+      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Competitor gap analysis' } },
+      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Monthly keyword ranking reports' } },
+    ],
+  },
+}
+
+const emmaServiceSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Service',
+  name: 'Emma AI Voice Receptionist',
+  provider: { '@type': 'Organization', name: 'GasSafeBot' },
+  description: 'Our AI receptionist answers every inbound call, 24 hours a day, 7 days a week. She identifies caller type, flags urgency, captures job details, and keeps your diary full while you\'re on the tools.',
+  serviceType: 'AI Receptionist',
+  areaServed: 'GB',
+  hasOfferCatalog: {
+    '@type': 'OfferCatalog',
+    name: 'Emma Features',
+    itemListElement: [
+      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Captures tenant / homeowner / landlord type' } },
+      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Flags gas leak / no heating / no hot water urgency' } },
+      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Sends job summary by SMS within 30 seconds' } },
+      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Books only within your hours & postcodes' } },
+      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Transfers emergencies or VIPs to your mobile' } },
+      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Logs missed-call opportunities automatically' } },
+    ],
+  },
+}
+
 const faqSchema = {
   '@context': 'https://schema.org',
   '@type': 'FAQPage',
@@ -66,6 +132,46 @@ const faqSchema = {
         text: 'Emma is an AI voice receptionist that answers every inbound call 24/7. She identifies caller type (tenant, homeowner, landlord), flags urgency, captures job details, sends an SMS summary to your phone, and only books within your working hours and coverage postcodes.',
       },
     },
+    {
+      '@type': 'Question',
+      name: 'How much does a gas engineer website cost?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Our Pilot package starts at £497 setup plus £197/month, Growth at £997 plus £347/month, and Dominator at £1,797 plus £597/month. The Emma AI receptionist add-on is £297 setup plus £197/month. All packages include everything — no hidden fees.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Do I own my website?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Yes. You own your domain, website files, Google Business Profile, and all accounts we set up. Everything is registered in your name from day one. If you ever cancel, you keep everything.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'Can I cancel anytime?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Yes. We work on a rolling monthly basis with 30 days notice. There are no lock-in contracts or cancellation fees.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'What areas do you cover?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'We work with Gas Safe registered engineers across the entire UK. Our local SEO strategies are tailored to each specific city and region, including London, Manchester, Birmingham, Leeds, Glasgow, Liverpool, and all major towns.',
+      },
+    },
+    {
+      '@type': 'Question',
+      name: 'What makes GasSafeBot different from other web designers?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'We only work with gas engineers. Every website we build is optimised specifically for heating industry keywords and local SEO. We understand what your customers search for and how to get you found.',
+      },
+    },
   ],
 }
 
@@ -75,6 +181,9 @@ export default function HomePage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(rankingWebsiteServiceSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(localSeoServiceSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(emmaServiceSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 
       <NavBar />
