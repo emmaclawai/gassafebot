@@ -162,7 +162,7 @@ const faqSchema = {
       name: 'What areas do you cover?',
       acceptedAnswer: {
         '@type': 'Answer',
-        text: 'We work with Gas Safe registered engineers across the entire UK. Our local SEO strategies are tailored to each specific city and region, including London, Manchester, Birmingham, Leeds, Glasgow, Liverpool, and all major towns.',
+        text: 'We work with Gas Safe registered engineers across the entire UK. Our local SEO strategies are tailored to each specific city and region, including Swindon, Peterborough, Telford, Northampton, Gloucester, Cheltenham, Wakefield, Derby, Basildon, Luton, Coventry, and all major UK towns.',
       },
     },
     {
