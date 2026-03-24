@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   description:
     'Websites, local SEO, and AI receptionist systems built for UK Gas Safe engineers. Designed to help heating businesses win more enquiries in their service areas.',
   alternates: { canonical: 'https://gassafebot.co.uk/' },
-  // Deploy: 2026-03-24
+  // Deploy: 2026-03-25
   robots: { index: true, follow: true },
   openGraph: {
     title: 'GasSafeBot | Websites & Local SEO for Gas Safe Engineers',
