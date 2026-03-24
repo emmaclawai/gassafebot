@@ -267,7 +267,7 @@ export default function HomePage() {
                       <span className="pp-icon" aria-hidden="true"><XCircleIcon className="w-6 h-6" /></span>
                       <div className="pp-text">
                         <h4>Generic websites that don&apos;t rank</h4>
-                        <p>A web designer builds you a pretty site but has no idea how to get &quot;gas engineer Manchester&quot; on page one. It sits on page four — invisible.</p>
+                        <p>A web designer builds you a pretty site but has no idea how to get &quot;gas engineer Swindon&quot; on page one. It sits on page four — invisible.</p>
                       </div>
                     </div>
                     <div className="problem-point bad">
@@ -654,7 +654,7 @@ export default function HomePage() {
             <div className="eyebrow">Service Areas</div>
             <h2>We Cover <span>The Whole UK</span></h2>
             <p className="lead">
-              We work with gas engineers from London to Glasgow. Our SEO strategies are city-specific —
+              We work with Gas Safe registered engineers across the entire UK, including Swindon, Peterborough, Telford, Northampton, Gloucester, Cheltenham, Wakefield, Derby, Basildon, Luton, Coventry, and all major UK towns. Our SEO strategies are city-specific —
               we know the competition and search patterns in each market. Swindon is our current proof-of-concept city — we're ranking it ourselves first, but we&apos;re active across all major UK cities.
             </p>
             <ScrollReveal>
