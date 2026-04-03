@@ -102,11 +102,11 @@ export default function LiveResultsPage() {
           <h2 style={{ fontSize: 22, fontWeight: 700, marginBottom: 20 }}>Area Availability</h2>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 12 }}>
             {[
-              { area: 'Swindon', taken: true },
+              { area: 'Sittingbourne', taken: true },
+              { area: 'Swindon', taken: false },
               { area: 'Coventry', taken: false },
               { area: 'Birmingham', taken: false },
               { area: 'Bristol', taken: false },
-              { area: 'Oxford', taken: false },
               { area: 'Reading', taken: false },
             ].map(a => (
               <div key={a.area} style={{
