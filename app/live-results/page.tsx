@@ -3,6 +3,8 @@
 import { useEffect, useState } from 'react';
 import { supabase } from '@/lib/supabase';
 
+export const dynamic = 'force-dynamic';
+
 type RankingRow = {
   id: number;
   keyword: string;
@@ -15,11 +17,29 @@ type RankingRow = {
 export default function LiveResultsPage() {
   const [rows, setRows] = useState<RankingRow[]>([]);
   const [loading, setLoading] = useState(true);
+  const [debugInfo, setDebugInfo] = useState<{
+    latestRunAt: string | null;
+    rowCount: number;
+    keywords: string[];
+    queryLog: string[];
+  }>({ latestRunAt: null, rowCount: 0, keywords: [], queryLog: [] });
 
   useEffect(() => {
     async function load() {
-      // First, get the latest checked_at date for own_site_tracker
-      const { data: latestRun } = await supabase
+      const queryLog: string[] = [];
+      
+      // Query 1: Get latest checked_at for own_site_tracker
+      const latestRunQuery = {
+        table: 'rankings',
+        select: 'checked_at',
+        filters: { source: 'own_site_tracker' },
+        order: { column: 'checked_at', ascending: false },
+        limit: 1
+      };
+      queryLog.push(`Q1: ${JSON.stringify(latestRunQuery)}`);
+      console.log('[LiveResults] Q1:', latestRunQuery);
+
+      const { data: latestRun, error: latestRunError } = await supabase
         .from('rankings')
         .select('checked_at')
         .eq('source', 'own_site_tracker')
@@ -27,16 +47,49 @@ export default function LiveResultsPage() {
         .limit(1)
         .single();
 
+      console.log('[LiveResults] Q1 result:', { latestRun, latestRunError });
+      queryLog.push(`Q1 result: ${latestRun ? latestRun.checked_at : 'null'}, error: ${latestRunError?.message || 'none'}`);
+
       if (latestRun) {
-        // Then fetch all rows from that latest run
-        const { data } = await supabase
+        // Query 2: Fetch all rows from that latest run
+        const rowsQuery = {
+          table: 'rankings',
+          select: '*',
+          filters: { 
+            source: 'own_site_tracker',
+            checked_at: latestRun.checked_at 
+          },
+          order: { column: 'keyword', ascending: true }
+        };
+        queryLog.push(`Q2: ${JSON.stringify(rowsQuery)}`);
+        console.log('[LiveResults] Q2:', rowsQuery);
+
+        const { data, error } = await supabase
           .from('rankings')
           .select('*')
           .eq('source', 'own_site_tracker')
           .eq('checked_at', latestRun.checked_at)
           .order('keyword', { ascending: true });
 
-        if (data) setRows(data);
+        console.log('[LiveResults] Q2 result:', { rowCount: data?.length || 0, error: error?.message || 'none', rows: data });
+        queryLog.push(`Q2 result: ${data?.length || 0} rows, error: ${error?.message || 'none'}`);
+
+        if (data) {
+          setRows(data);
+          setDebugInfo({
+            latestRunAt: latestRun.checked_at,
+            rowCount: data.length,
+            keywords: data.map(r => r.keyword),
+            queryLog
+          });
+        }
+      } else {
+        setDebugInfo({
+          latestRunAt: null,
+          rowCount: 0,
+          keywords: [],
+          queryLog
+        });
       }
       setLoading(false);
     }
@@ -55,6 +108,22 @@ export default function LiveResultsPage() {
   return (
     <main style={{ minHeight: '100vh', background: '#0a0a0a', color: '#fff', padding: '48px 24px', fontFamily: 'sans-serif' }}>
       <div style={{ maxWidth: 960, margin: '0 auto' }}>
+
+        {/* DEBUG BLOCK */}
+        <div style={{ background: '#1a1a00', border: '2px solid #fbbf24', borderRadius: 12, padding: 20, marginBottom: 32 }}>
+          <h3 style={{ color: '#fbbf24', marginTop: 0, marginBottom: 16, fontSize: 16, fontWeight: 700 }}>🔍 DEBUG INFO</h3>
+          <div style={{ fontFamily: 'monospace', fontSize: 13, lineHeight: 1.6 }}>
+            <div><strong>Latest run:</strong> {debugInfo.latestRunAt || 'null'}</div>
+            <div><strong>Rows:</strong> {debugInfo.rowCount}</div>
+            <div><strong>Keywords:</strong> {JSON.stringify(debugInfo.keywords)}</div>
+            <div style={{ marginTop: 12, color: '#888' }}>
+              <strong>Query Log:</strong>
+              {debugInfo.queryLog.map((log, i) => (
+                <div key={i} style={{ marginLeft: 12, marginTop: 4 }}>• {log}</div>
+              ))}
+            </div>
+          </div>
+        </div>
 
         <div style={{ marginBottom: 48 }}>
           <h1 style={{ fontSize: 40, fontWeight: 800, marginBottom: 8 }}>Live Google Rankings</h1>
