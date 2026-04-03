@@ -18,7 +18,7 @@ const barlowCondensed = Barlow_Condensed({
 })
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://gassafebot.co.uk'),
+  metadataBase: new URL('https://www.gassafebot.co.uk'),
   title: {
     default: 'GasSafeBot | Websites & Local SEO for Gas Safe Engineers | UK',
     template: '%s | GasSafeBot',
@@ -107,6 +107,7 @@ export default function RootLayout({
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link rel="canonical" href="https://www.gassafebot.co.uk/" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
