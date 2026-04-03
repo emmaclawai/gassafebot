@@ -18,14 +18,26 @@ export default function LiveResultsPage() {
 
   useEffect(() => {
     async function load() {
-      const { data } = await supabase
+      // First, get the latest checked_at date for own_site_tracker
+      const { data: latestRun } = await supabase
         .from('rankings')
-        .select('*')
-        .eq('domain', 'gassafebot.co.uk')
+        .select('checked_at')
+        .eq('source', 'own_site_tracker')
         .order('checked_at', { ascending: false })
-        .limit(20);
+        .limit(1)
+        .single();
 
-      if (data) setRows(data);
+      if (latestRun) {
+        // Then fetch all rows from that latest run
+        const { data } = await supabase
+          .from('rankings')
+          .select('*')
+          .eq('source', 'own_site_tracker')
+          .eq('checked_at', latestRun.checked_at)
+          .order('keyword', { ascending: true });
+
+        if (data) setRows(data);
+      }
       setLoading(false);
     }
 
