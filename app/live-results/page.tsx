@@ -3,7 +3,7 @@
 import { useEffect, useState } from 'react';
 import { supabase } from '@/lib/supabase';
 
-export const dynamic = 'force-dynamic';
+export const dynamic = 'force-dynamic'; // Build: 2026-04-03T23:05Z
 
 type RankingRow = {
   id: number;
