@@ -112,14 +112,19 @@ export default function LiveResultsPage() {
 
         <div style={{ background: '#111', border: '1px solid #222', borderRadius: 16, padding: 32, marginBottom: 48 }}>
           <h2 style={{ fontSize: 22, fontWeight: 700, marginBottom: 20 }}>Area Availability</h2>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 12 }}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(200px, 1fr))', gap: 12 }}>
             {[
               { area: 'Sittingbourne', taken: true },
               { area: 'Swindon', taken: false },
-              { area: 'Coventry', taken: false },
-              { area: 'Birmingham', taken: false },
-              { area: 'Bristol', taken: false },
-              { area: 'Reading', taken: false },
+              { area: 'Peterborough', taken: false },
+              { area: 'Telford', taken: false },
+              { area: 'Northampton', taken: false },
+              { area: 'Gloucester', taken: false },
+              { area: 'Basildon', taken: false },
+              { area: 'Cheltenham', taken: false },
+              { area: 'Wakefield', taken: false },
+              { area: 'Derby', taken: false },
+              { area: 'Luton', taken: false },
             ].map(a => (
               <div key={a.area} style={{
                 background: a.taken ? '#1a0000' : '#001a00',
