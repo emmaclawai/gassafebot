@@ -24,7 +24,7 @@ export default function PrivacyPolicy() {
                   Privacy <span>Policy</span>
                 </h1>
                 <p className="lead">
-                  Last updated: March 2026
+                  Last updated: April 2026
                 </p>
 
                 <div style={{ marginTop: '2rem', lineHeight: 1.7 }}>
@@ -51,7 +51,10 @@ export default function PrivacyPolicy() {
                     <li><strong>Contact information:</strong> Name, email address, phone number</li>
                     <li><strong>Business information:</strong> Company name, trading address, postcode</li>
                     <li><strong>Service details:</strong> Information about your heating business and marketing needs</li>
+                    <li><strong>Professional information:</strong> Gas Safe registration number</li>
                     <li><strong>Technical data:</strong> IP address, browser type, device information, cookies</li>
+                    <li><strong>Call recordings:</strong> Phone conversations with Emma, our AI receptionist</li>
+                    <li><strong>SMS/MMS data:</strong> Messages sent and received via our communication services</li>
                   </ul>
 
                   <h2 style={{ fontSize: '1.25rem', marginTop: '2rem', marginBottom: '1rem' }}>
@@ -63,6 +66,7 @@ export default function PrivacyPolicy() {
                     <li>Contact us via email or phone</li>
                     <li>Browse our website (via cookies and analytics)</li>
                     <li>Engage our services</li>
+                    <li>Interact with Emma, our AI receptionist</li>
                   </ul>
 
                   <h2 style={{ fontSize: '1.25rem', marginTop: '2rem', marginBottom: '1rem' }}>
@@ -75,6 +79,8 @@ export default function PrivacyPolicy() {
                     <li>Send you service-related information and updates</li>
                     <li>Improve our website and services</li>
                     <li>Comply with legal obligations</li>
+                    <li>Train and improve our AI receptionist (Emma) — call recordings may be used for quality assurance and training purposes</li>
+                    <li>Send appointment confirmations and reminders via SMS</li>
                   </ul>
 
                   <h2 style={{ fontSize: '1.25rem', marginTop: '2rem', marginBottom: '1rem' }}>
@@ -83,25 +89,66 @@ export default function PrivacyPolicy() {
                   <p>Under UK GDPR, we process your data on the following legal bases:</p>
                   <ul style={{ marginLeft: '1.5rem', marginTop: '0.5rem' }}>
                     <li><strong>Contract:</strong> Processing necessary to fulfil our service agreement</li>
-                    <li><strong>Consent:</strong> Where you have given explicit permission (e.g., marketing emails)</li>
+                    <li><strong>Consent:</strong> Where you have given explicit permission (e.g., marketing emails, call recordings)</li>
                     <li><strong>Legitimate interests:</strong> Running our business and improving our services</li>
                     <li><strong>Legal obligation:</strong> Compliance with tax, accounting, and other laws</li>
                   </ul>
 
                   <h2 style={{ fontSize: '1.25rem', marginTop: '2rem', marginBottom: '1rem' }}>
-                    6. Data Sharing
+                    6. Call Recordings and AI Receptionist (Emma)
+                  </h2>
+                  <p>
+                    Our AI receptionist service (&quot;Emma&quot;) may record phone conversations for the following purposes:
+                  </p>
+                  <ul style={{ marginLeft: '1.5rem', marginTop: '0.5rem' }}>
+                    <li>Quality assurance and training of the AI system</li>
+                    <li>Transcribing calls for records and follow-up</li>
+                    <li>Improving our services and customer experience</li>
+                  </ul>
+                  <p style={{ marginTop: '1rem' }}>
+                    <strong>Your rights regarding call recordings:</strong> You have the right to request that we do not record your calls, 
+                    and you can request deletion of any recordings we hold. Please contact us at{' '}
+                    <a href="mailto:hello@gassafebot.co.uk" style={{ color: 'var(--fire)' }}>hello@gassafebot.co.uk</a> to exercise these rights.
+                  </p>
+                  <p>
+                    Call recordings are retained for up to 12 months unless you request earlier deletion.
+                  </p>
+
+                  <h2 style={{ fontSize: '1.25rem', marginTop: '2rem', marginBottom: '1rem' }}>
+                    7. SMS and Messaging Services
+                  </h2>
+                  <p>
+                    We use third-party messaging services to send SMS/MMS messages for:
+                  </p>
+                  <ul style={{ marginLeft: '1.5rem', marginTop: '0.5rem' }}>
+                    <li>Appointment confirmations and reminders</li>
+                    <li>Service updates and notifications</li>
+                    <li>Two-factor authentication (if enabled)</li>
+                  </ul>
+                  <p style={{ marginTop: '1rem' }}>
+                    <strong>Opt-out:</strong> You can opt out of SMS communications at any time by replying STOP to any message 
+                    or contacting us directly.
+                  </p>
+                  <p>
+                    Our SMS services are provided through Twilio and similar providers. Your phone number and message content 
+                    are processed in accordance with their privacy policies and applicable data protection laws.
+                  </p>
+
+                  <h2 style={{ fontSize: '1.25rem', marginTop: '2rem', marginBottom: '1rem' }}>
+                    8. Data Sharing
                   </h2>
                   <p>
                     We do not sell your personal data. We may share your information with:
                   </p>
                   <ul style={{ marginLeft: '1.5rem', marginTop: '0.5rem' }}>
                     <li>Service providers (hosting, email, analytics)</li>
+                    <li>AI and communication platforms (Synthflow for Emma AI, Twilio for SMS/calls)</li>
                     <li>Professional advisers (accountants, legal)</li>
                     <li>Regulatory authorities when required by law</li>
                   </ul>
 
                   <h2 style={{ fontSize: '1.25rem', marginTop: '2rem', marginBottom: '1rem' }}>
-                    7. Data Retention
+                    9. Data Retention
                   </h2>
                   <p>
                     We retain your personal data only for as long as necessary:
@@ -109,30 +156,31 @@ export default function PrivacyPolicy() {
                   <ul style={{ marginLeft: '1.5rem', marginTop: '0.5rem' }}>
                     <li>Active clients: Duration of service plus 7 years (accounting records)</li>
                     <li>Enquiries: Up to 2 years unless you request deletion</li>
+                    <li>Call recordings: Up to 12 months</li>
+                    <li>SMS/MMS logs: Up to 2 years</li>
                     <li>Website analytics: 26 months</li>
                   </ul>
 
                   <h2 style={{ fontSize: '1.25rem', marginTop: '2rem', marginBottom: '1rem' }}>
-                    8. Your Rights
+                    10. Your Rights
                   </h2>
                   <p>Under UK data protection law, you have the right to:</p>
                   <ul style={{ marginLeft: '1.5rem', marginTop: '0.5rem' }}>
                     <li>Access the personal data we hold about you</li>
                     <li>Request correction of inaccurate data</li>
-                    <li>Request deletion of your data ("right to be forgotten")</li>
+                    <li>Request deletion of your data (&quot;right to be forgotten&quot;)</li>
                     <li>Object to or restrict processing of your data</li>
                     <li>Request data portability</li>
                     <li>Withdraw consent at any time</li>
+                    <li>Request that we do not record your calls</li>
                   </ul>
                   <p style={{ marginTop: '1rem' }}>
                     To exercise any of these rights, contact us at{' '}
-                    <a href="mailto:hello@gassafebot.co.uk" style={{ color: 'var(--fire)' }}>
-                      hello@gassafebot.co.uk
-                    </a>.
+                    <a href="mailto:hello@gassafebot.co.uk" style={{ color: 'var(--fire)' }}>hello@gassafebot.co.uk</a>.
                   </p>
 
                   <h2 style={{ fontSize: '1.25rem', marginTop: '2rem', marginBottom: '1rem' }}>
-                    9. Cookies
+                    11. Cookies
                   </h2>
                   <p>
                     Our website uses cookies to improve your browsing experience and analyse 
@@ -141,16 +189,17 @@ export default function PrivacyPolicy() {
                   </p>
 
                   <h2 style={{ fontSize: '1.25rem', marginTop: '2rem', marginBottom: '1rem' }}>
-                    10. Data Security
+                    12. Data Security
                   </h2>
                   <p>
                     We implement appropriate technical and organisational measures to protect 
                     your personal data against unauthorised access, alteration, disclosure, or 
-                    destruction. This includes encryption, secure hosting, and access controls.
+                    destruction. This includes encryption, secure hosting, access controls, and 
+                    regular security assessments.
                   </p>
 
                   <h2 style={{ fontSize: '1.25rem', marginTop: '2rem', marginBottom: '1rem' }}>
-                    11. Third-Party Links
+                    13. Third-Party Links
                   </h2>
                   <p>
                     Our website may contain links to third-party websites. We are not responsible 
@@ -159,16 +208,16 @@ export default function PrivacyPolicy() {
                   </p>
 
                   <h2 style={{ fontSize: '1.25rem', marginTop: '2rem', marginBottom: '1rem' }}>
-                    12. Changes to This Policy
+                    14. Changes to This Policy
                   </h2>
                   <p>
                     We may update this Privacy Policy from time to time. Any changes will be 
-                    posted on this page with an updated "Last updated" date. We encourage you 
+                    posted on this page with an updated &quot;Last updated&quot; date. We encourage you 
                     to review this policy periodically.
                   </p>
 
                   <h2 style={{ fontSize: '1.25rem', marginTop: '2rem', marginBottom: '1rem' }}>
-                    13. Contact Us
+                    15. Contact Us
                   </h2>
                   <p>
                     If you have any questions about this Privacy Policy or how we handle your 
@@ -176,15 +225,11 @@ export default function PrivacyPolicy() {
                   </p>
                   <p style={{ marginTop: '0.5rem' }}>
                     <strong>Email:</strong>{' '}
-                    <a href="mailto:hello@gassafebot.co.uk" style={{ color: 'var(--fire)' }}>
-                      hello@gassafebot.co.uk
-                    </a>
+                    <a href="mailto:hello@gassafebot.co.uk" style={{ color: 'var(--fire)' }}>hello@gassafebot.co.uk</a>
                   </p>
                   <p style={{ marginTop: '0.5rem' }}>
                     <strong>Website:</strong>{' '}
-                    <a href="https://gassafebot.co.uk" style={{ color: 'var(--fire)' }}>
-                      gassafebot.co.uk
-                    </a>
+                    <a href="https://gassafebot.co.uk" style={{ color: 'var(--fire)' }}>gassafebot.co.uk</a>
                   </p>
 
                   <div style={{ marginTop: '3rem', paddingTop: '2rem', borderTop: '1px solid rgba(255,255,255,0.1)' }}>
