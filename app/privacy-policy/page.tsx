@@ -98,7 +98,8 @@ export default function PrivacyPolicy() {
                     6. Call Recordings and AI Receptionist (Emma)
                   </h2>
                   <p>
-                    Our AI receptionist service (&quot;Emma&quot;) may record phone conversations for the following purposes:
+                    Our AI receptionist service (&quot;Emma&quot;) is built on Synthflow, an AI voice platform, 
+                    and uses Twilio for telephony services. Phone conversations may be recorded for:
                   </p>
                   <ul style={{ marginLeft: '1.5rem', marginTop: '0.5rem' }}>
                     <li>Quality assurance and training of the AI system</li>
@@ -111,27 +112,31 @@ export default function PrivacyPolicy() {
                     <a href="mailto:hello@gassafebot.co.uk" style={{ color: 'var(--fire)' }}>hello@gassafebot.co.uk</a> to exercise these rights.
                   </p>
                   <p>
-                    Call recordings are retained for up to 12 months unless you request earlier deletion.
+                    Call recordings are retained for up to 12 months unless you request earlier deletion. 
+                    Recordings are processed by Synthflow and stored securely in accordance with their data handling practices.
                   </p>
 
                   <h2 style={{ fontSize: '1.25rem', marginTop: '2rem', marginBottom: '1rem' }}>
                     7. SMS and Messaging Services
                   </h2>
                   <p>
-                    We use third-party messaging services to send SMS/MMS messages for:
+                    We use Twilio to send SMS/MMS messages for:
                   </p>
                   <ul style={{ marginLeft: '1.5rem', marginTop: '0.5rem' }}>
                     <li>Appointment confirmations and reminders</li>
                     <li>Service updates and notifications</li>
-                    <li>Two-factor authentication (if enabled)</li>
+                    <li>Job summaries from Emma AI receptionist</li>
                   </ul>
                   <p style={{ marginTop: '1rem' }}>
                     <strong>Opt-out:</strong> You can opt out of SMS communications at any time by replying STOP to any message 
                     or contacting us directly.
                   </p>
                   <p>
-                    Our SMS services are provided through Twilio and similar providers. Your phone number and message content 
-                    are processed in accordance with their privacy policies and applicable data protection laws.
+                    Twilio processes your phone number and message content as our telephony service provider. 
+                    For more information about how Twilio handles data, please see their privacy policy at{' '}
+                    <a href="https://www.twilio.com/legal/privacy" style={{ color: 'var(--fire)' }} target="_blank" rel="noopener">
+                      twilio.com/legal/privacy
+                    </a>.
                   </p>
 
                   <h2 style={{ fontSize: '1.25rem', marginTop: '2rem', marginBottom: '1rem' }}>
@@ -142,7 +147,8 @@ export default function PrivacyPolicy() {
                   </p>
                   <ul style={{ marginLeft: '1.5rem', marginTop: '0.5rem' }}>
                     <li>Service providers (hosting, email, analytics)</li>
-                    <li>AI and communication platforms (Synthflow for Emma AI, Twilio for SMS/calls)</li>
+                    <li>Synthflow — our AI voice platform provider for Emma call processing</li>
+                    <li>Twilio — our telephony and SMS service provider</li>
                     <li>Professional advisers (accountants, legal)</li>
                     <li>Regulatory authorities when required by law</li>
                   </ul>
