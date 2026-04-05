@@ -98,8 +98,8 @@ export default function PrivacyPolicy() {
                     6. Call Recordings and AI Receptionist (Emma)
                   </h2>
                   <p>
-                    Our AI receptionist service (&quot;Emma&quot;) is built on Synthflow, an AI voice platform, 
-                    and uses Twilio for telephony services. Phone conversations may be recorded for:
+                    Our AI receptionist service (&quot;Emma&quot;) uses Telnyx for telephony services. 
+                    Phone conversations may be recorded for:
                   </p>
                   <ul style={{ marginLeft: '1.5rem', marginTop: '0.5rem' }}>
                     <li>Quality assurance and training of the AI system</li>
@@ -113,14 +113,14 @@ export default function PrivacyPolicy() {
                   </p>
                   <p>
                     Call recordings are retained for up to 12 months unless you request earlier deletion. 
-                    Recordings are processed by Synthflow and stored securely in accordance with their data handling practices.
+                    Recordings are processed through Telnyx and stored securely in accordance with their data handling practices.
                   </p>
 
                   <h2 style={{ fontSize: '1.25rem', marginTop: '2rem', marginBottom: '1rem' }}>
                     7. SMS and Messaging Services
                   </h2>
                   <p>
-                    We use Twilio to send SMS/MMS messages for:
+                    We use Telnyx to send SMS/MMS messages for:
                   </p>
                   <ul style={{ marginLeft: '1.5rem', marginTop: '0.5rem' }}>
                     <li>Appointment confirmations and reminders</li>
@@ -132,10 +132,10 @@ export default function PrivacyPolicy() {
                     or contacting us directly.
                   </p>
                   <p>
-                    Twilio processes your phone number and message content as our telephony service provider. 
-                    For more information about how Twilio handles data, please see their privacy policy at{' '}
-                    <a href="https://www.twilio.com/legal/privacy" style={{ color: 'var(--fire)' }} target="_blank" rel="noopener">
-                      twilio.com/legal/privacy
+                    Telnyx processes your phone number and message content as our telephony and messaging service provider. 
+                    For more information about how Telnyx handles data, please see their privacy policy at{' '}
+                    <a href="https://telnyx.com/privacy-policy" style={{ color: 'var(--fire)' }} target="_blank" rel="noopener">
+                      telnyx.com/privacy-policy
                     </a>.
                   </p>
 
@@ -147,8 +147,7 @@ export default function PrivacyPolicy() {
                   </p>
                   <ul style={{ marginLeft: '1.5rem', marginTop: '0.5rem' }}>
                     <li>Service providers (hosting, email, analytics)</li>
-                    <li>Synthflow — our AI voice platform provider for Emma call processing</li>
-                    <li>Twilio — our telephony and SMS service provider</li>
+                    <li>Telnyx — our telephony, call recording, and SMS service provider</li>
                     <li>Professional advisers (accountants, legal)</li>
                     <li>Regulatory authorities when required by law</li>
                   </ul>
