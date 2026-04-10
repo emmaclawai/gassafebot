@@ -28,6 +28,7 @@ interface AuditFormData {
   consent: boolean
   turnstileToken?: string
   csrfToken: string
+  sessionId: string
 }
 
 function generateCsrfToken(): string {
@@ -143,11 +144,11 @@ export async function GET(): Promise<NextResponse> {
 
   // Clean up expired tokens periodically
   const now = Date.now()
-  for (const [key, value] of csrfStore.entries()) {
+  csrfStore.forEach((value, key) => {
     if (now > value.expiresAt) {
       csrfStore.delete(key)
     }
-  }
+  })
 
   return NextResponse.json({ 
     csrfToken: token,
@@ -310,7 +311,7 @@ export async function POST(request: NextRequest): Promise<NextResponse> {
         from: 'GasSafeBot <hello@gassafebot.co.uk>',
         to: 'hello@gassafebot.co.uk',
         subject: `New Audit Request: ${sanitizedData.business}`,
-        replyTo: sanitizedData.email,
+        reply_to: sanitizedData.email,
         text: `
 New Audit Request
 
