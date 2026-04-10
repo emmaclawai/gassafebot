@@ -25,30 +25,17 @@ export default function LiveResultsPage() {
   const [selectedRow, setSelectedRow] = useState<RankingRow | null>(null);
   useEffect(() => {
     async function load() {
-      // HARD-CODED: Only read from v2 tracker - do NOT mix with old data
-      const SOURCE = 'organic_rank_tracker_v2';
-
-      // Query 1: Get latest checked_at for v2 tracker only
-      const { data: latestRun } = await supabase
+      // Fetch 20 most recent rows from v2 tracker
+      const { data } = await supabase
         .from('rankings')
-        .select('checked_at')
-        .eq('source', SOURCE)
+        .select('*')
+        .eq('source', 'organic_rank_tracker_v2')
+        .eq('domain', 'gassafebot.co.uk')
         .order('checked_at', { ascending: false })
-        .limit(1)
-        .single();
+        .limit(20);
 
-      if (latestRun) {
-        // Query 2: Fetch all rows from that latest run - v2 only
-        const { data } = await supabase
-          .from('rankings')
-          .select('*')
-          .eq('source', SOURCE)
-          .eq('checked_at', latestRun.checked_at)
-          .order('keyword', { ascending: true });
-
-        if (data) {
-          setRows(data);
-        }
+      if (data) {
+        setRows(data);
       }
       setLoading(false);
     }
