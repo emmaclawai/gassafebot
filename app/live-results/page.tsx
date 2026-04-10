@@ -52,10 +52,19 @@ export default function LiveResultsPage() {
     : [];
 
   // Stats
-  const ranked = latest.filter(r => r.found && (r.organic_position || r.rank)).length;
-  const top10 = latest.filter(r => (r.organic_position || r.rank) && (r.organic_position || r.rank) <= 10).length;
-  const page2 = latest.filter(r => (r.organic_position || r.rank) && (r.organic_position || r.rank) > 10 && (r.organic_position || r.rank) <= 20).length;
-  const deeper = latest.filter(r => (r.organic_position || r.rank) && (r.organic_position || r.rank) > 20).length;
+  const ranked = latest.filter(r => r.found && (r.organic_position ?? r.rank)).length;
+  const top10 = latest.filter(r => {
+    const pos = r.organic_position ?? r.rank;
+    return pos && pos <= 10;
+  }).length;
+  const page2 = latest.filter(r => {
+    const pos = r.organic_position ?? r.rank;
+    return pos && pos > 10 && pos <= 20;
+  }).length;
+  const deeper = latest.filter(r => {
+    const pos = r.organic_position ?? r.rank;
+    return pos && pos > 20;
+  }).length;
   const notFound = latest.filter(r => !r.found).length;
 
   return (
@@ -112,11 +121,23 @@ export default function LiveResultsPage() {
               ) : latest.map(row => (
                 <tr key={row.id} style={{ borderTop: '1px solid #1a1a1a' }}>
                   <td style={{ padding: '16px 20px' }}>{row.keyword}</td>
-                  <td style={{ padding: '16px 20px', textAlign: 'center', fontWeight: 700, color: (row.organic_position || row.rank) && (row.organic_position || row.rank) <= 10 ? '#22c55e' : (row.organic_position || row.rank) && (row.organic_position || row.rank) <= 20 ? '#f97316' : '#fff' }}>
-                    {(row.organic_position || row.rank) ? '#' + (row.organic_position || row.rank) : '—'}
+                  <td style={{ padding: '16px 20px', textAlign: 'center', fontWeight: 700, color: (() => {
+                    const pos = row.organic_position ?? row.rank;
+                    if (!pos) return '#fff';
+                    if (pos <= 10) return '#22c55e';
+                    if (pos <= 20) return '#f97316';
+                    return '#fff';
+                  })() }}>
+                    {(() => {
+                      const pos = row.organic_position ?? row.rank;
+                      return pos ? '#' + pos : '—';
+                    })()}
                   </td>
                   <td style={{ padding: '16px 20px', textAlign: 'center', color: '#666', fontSize: 13 }}>
-                    {(row.raw_position || row.rank) ? '#' + (row.raw_position || row.rank) : '—'}
+                    {(() => {
+                      const pos = row.raw_position ?? row.rank;
+                      return pos ? '#' + pos : '—';
+                    })()}
                   </td>
                   <td style={{ padding: '16px 20px' }}>
                     <span style={{ color: row.found ? '#22c55e' : '#ef4444', fontSize: 13 }}>
