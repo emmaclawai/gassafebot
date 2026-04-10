@@ -41,7 +41,7 @@ const nextConfig = {
               "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com",
               "font-src 'self' https://fonts.gstatic.com",
               "img-src 'self' data: https:",
-              "connect-src 'self' https://formspree.io",
+              "connect-src 'self' https://formspree.io https://bnzhodvqfgfsiwjhfnbj.supabase.co",
               "frame-src 'self' https://challenges.cloudflare.com",
               "base-uri 'self'",
               "form-action 'self' https://formspree.io",
