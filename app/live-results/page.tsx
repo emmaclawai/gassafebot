@@ -30,7 +30,7 @@ export default function LiveResultsPage() {
 
       // Query 1: Get latest checked_at for v2 tracker only
       const { data: latestRun } = await supabase
-        .from('rankings_public')
+        .from('rankings')
         .select('checked_at')
         .eq('source', SOURCE)
         .order('checked_at', { ascending: false })
@@ -40,7 +40,7 @@ export default function LiveResultsPage() {
       if (latestRun) {
         // Query 2: Fetch all rows from that latest run - v2 only
         const { data } = await supabase
-          .from('rankings_public')
+          .from('rankings')
           .select('*')
           .eq('source', SOURCE)
           .eq('checked_at', latestRun.checked_at)
