@@ -11,8 +11,9 @@ type RankingRow = {
   keyword: string;
   domain: string;
   found: boolean;
-  organic_position: number | null;
-  raw_position: number | null;
+  organic_position?: number | null;
+  raw_position?: number | null;
+  rank?: number | null;
   ranking_url: string | null;
   checked_at: string;
   source: string;
@@ -51,10 +52,10 @@ export default function LiveResultsPage() {
     : [];
 
   // Stats
-  const ranked = latest.filter(r => r.found && r.organic_position).length;
-  const top10 = latest.filter(r => r.organic_position && r.organic_position <= 10).length;
-  const page2 = latest.filter(r => r.organic_position && r.organic_position > 10 && r.organic_position <= 20).length;
-  const deeper = latest.filter(r => r.organic_position && r.organic_position > 20).length;
+  const ranked = latest.filter(r => r.found && (r.organic_position || r.rank)).length;
+  const top10 = latest.filter(r => (r.organic_position || r.rank) && (r.organic_position || r.rank) <= 10).length;
+  const page2 = latest.filter(r => (r.organic_position || r.rank) && (r.organic_position || r.rank) > 10 && (r.organic_position || r.rank) <= 20).length;
+  const deeper = latest.filter(r => (r.organic_position || r.rank) && (r.organic_position || r.rank) > 20).length;
   const notFound = latest.filter(r => !r.found).length;
 
   return (
@@ -111,11 +112,11 @@ export default function LiveResultsPage() {
               ) : latest.map(row => (
                 <tr key={row.id} style={{ borderTop: '1px solid #1a1a1a' }}>
                   <td style={{ padding: '16px 20px' }}>{row.keyword}</td>
-                  <td style={{ padding: '16px 20px', textAlign: 'center', fontWeight: 700, color: row.organic_position && row.organic_position <= 10 ? '#22c55e' : row.organic_position && row.organic_position <= 20 ? '#f97316' : '#fff' }}>
-                    {row.organic_position ? '#' + row.organic_position : '—'}
+                  <td style={{ padding: '16px 20px', textAlign: 'center', fontWeight: 700, color: (row.organic_position || row.rank) && (row.organic_position || row.rank) <= 10 ? '#22c55e' : (row.organic_position || row.rank) && (row.organic_position || row.rank) <= 20 ? '#f97316' : '#fff' }}>
+                    {(row.organic_position || row.rank) ? '#' + (row.organic_position || row.rank) : '—'}
                   </td>
                   <td style={{ padding: '16px 20px', textAlign: 'center', color: '#666', fontSize: 13 }}>
-                    {row.raw_position ? '#' + row.raw_position : '—'}
+                    {(row.raw_position || row.rank) ? '#' + (row.raw_position || row.rank) : '—'}
                   </td>
                   <td style={{ padding: '16px 20px' }}>
                     <span style={{ color: row.found ? '#22c55e' : '#ef4444', fontSize: 13 }}>
